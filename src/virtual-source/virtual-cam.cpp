@@ -43,7 +43,7 @@ CUnknown *WINAPI CreateInstance4(LPUNKNOWN lpunk, HRESULT *phr)
 }
 
 CVCam::CVCam(LPUNKNOWN lpunk, HRESULT *phr, const GUID id, int mode)
-	: CSource(NAME("OBS Virtual CAM"), lpunk, id)
+	: CSource(NAME("UVC camera2 cam"), lpunk, id)
 {
 	ASSERT(phr);
 	CAutoLock cAutoLock(&m_cStateLock);

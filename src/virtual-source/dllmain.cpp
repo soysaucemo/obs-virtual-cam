@@ -45,19 +45,19 @@ const AMOVIESETUP_PIN AMSPinA = {
 	(LPWSTR)L"Output", FALSE, TRUE, FALSE,          FALSE,
 	&CLSID_NULL,       NULL,  1,    &AMSMediaTypesA};
 
-const AMOVIESETUP_FILTER AMSFilterV = {&CLSID_OBS_VirtualV, L"OBS Virtual Cam",
+const AMOVIESETUP_FILTER AMSFilterV = {&CLSID_OBS_VirtualV, L"UVC camera2 cam",
 				       MERIT_DO_NOT_USE, 1, &AMSPinV};
 
 const AMOVIESETUP_FILTER AMSFilterV2 = {&CLSID_OBS_VirtualV2,
-					L"OBS Virtual Cam2", MERIT_DO_NOT_USE,
+					L"UVC camera2 cam2", MERIT_DO_NOT_USE,
 					1, &AMSPinV};
 
 const AMOVIESETUP_FILTER AMSFilterV3 = {&CLSID_OBS_VirtualV3,
-					L"OBS Virtual Cam3", MERIT_DO_NOT_USE,
+					L"UVC camera2 cam3", MERIT_DO_NOT_USE,
 					1, &AMSPinV};
 
 const AMOVIESETUP_FILTER AMSFilterV4 = {&CLSID_OBS_VirtualV4,
-					L"OBS Virtual Cam4", MERIT_DO_NOT_USE,
+					L"UVC camera2 cam4", MERIT_DO_NOT_USE,
 					1, &AMSPinV};
 
 const AMOVIESETUP_FILTER AMSFilterA = {&CLSID_OBS_VirtualA,
