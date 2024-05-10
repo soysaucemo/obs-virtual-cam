@@ -36,10 +36,10 @@ VirtualProperties::VirtualProperties(QWidget *parent)
 	ui->checkBox_auto->setChecked(autostart);
 	ui->checkBox_horiflip->setChecked(hori_flip);
 	ui->checkBox_keepratio->setChecked(keep_ratio);
-	ui->comboBox_target->addItem("OBS-Camera", ModeVideo);
-	ui->comboBox_target->addItem("OBS-Camera2", ModeVideo2);
-	ui->comboBox_target->addItem("OBS-Camera3", ModeVideo3);
-	ui->comboBox_target->addItem("OBS-Camera4", ModeVideo4);
+	ui->comboBox_target->addItem("UVCcamera2", ModeVideo);
+	ui->comboBox_target->addItem("UVCcamera22", ModeVideo2);
+	ui->comboBox_target->addItem("UVCcamera23", ModeVideo3);
+	ui->comboBox_target->addItem("UVCcamera24", ModeVideo4);
 	ui->comboBox_target->setCurrentIndex(
 		ui->comboBox_target->findData(target));
 	ui->spinBox->setValue(delay);

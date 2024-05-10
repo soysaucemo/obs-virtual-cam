@@ -256,10 +256,10 @@ static obs_properties_t *virtual_filter_properties(void *data)
 	cb = obs_properties_add_list(props, S_TARGET, T_TARGET,
 				     OBS_COMBO_TYPE_LIST, OBS_COMBO_FORMAT_INT);
 
-	obs_property_list_add_int(cb, "OBS-Camera", ModeVideo);
-	obs_property_list_add_int(cb, "OBS-Camera2", ModeVideo2);
-	obs_property_list_add_int(cb, "OBS-Camera3", ModeVideo3);
-	obs_property_list_add_int(cb, "OBS-Camera4", ModeVideo4);
+	obs_property_list_add_int(cb, "UVCcamera2", ModeVideo);
+	obs_property_list_add_int(cb, "UVCcamera22", ModeVideo2);
+	obs_property_list_add_int(cb, "UVCcamera23", ModeVideo3);
+	obs_property_list_add_int(cb, "UVCcamera24", ModeVideo4);
 
 	obs_properties_add_bool(props, S_FLIP, T_FLIP);
 	obs_properties_add_bool(props, S_RATIO, T_RATIO);
