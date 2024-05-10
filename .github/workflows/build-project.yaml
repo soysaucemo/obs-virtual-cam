@@ -3,7 +3,7 @@ on:
   workflow_call:
     outputs:
       pluginName:
-        description: 'Project name detected by parsing build spec file'
+        description: 'Project name detected by parsing build spec file2'
         value: ${{ jobs.check-event.outputs.pluginName }}
 jobs:
   check-event:
