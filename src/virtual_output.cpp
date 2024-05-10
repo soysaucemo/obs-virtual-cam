@@ -128,7 +128,7 @@ static bool virtual_output_start(void *data)
 
 		start = obs_output_begin_data_capture(out_data->output, 0);
 
-		obs_log(LOG_INFO, "starting virtual-output on VirtualCam'%d'",
+		obs_log(LOG_INFO, "starting virtual-output on UVCcamera2cam'%d'",
 			out_data->video_mode + 1);
 
 	} else {
@@ -138,7 +138,7 @@ static bool virtual_output_start(void *data)
 		shared_queue_write_close(&out_data->audio_queue);
 
 		obs_log(LOG_WARNING,
-			"starting virtual-output failed on VirtualCam'%d'",
+			"starting virtual-output failed on UVCcamera2cam'%d'",
 			out_data->video_mode + 1);
 	}
 

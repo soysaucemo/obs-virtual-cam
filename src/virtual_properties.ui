@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>VirtualCam</string>
+   <string>UVCcamera2cam</string>
   </property>
   <widget class="QGroupBox" name="groupBox_delay">
    <property name="geometry">

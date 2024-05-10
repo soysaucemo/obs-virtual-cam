@@ -1,4 +1,4 @@
-LIBRARY     obs-virtualsource.dll
+LIBRARY     UVCcamera2source.dll
 EXPORTS
             DllMain                 PRIVATE
             DllGetClassObject       PRIVATE

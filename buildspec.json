@@ -1,52 +1,52 @@
 {
-    "dependencies": {
-        "obs-studio": {
-            "version": "30.0.2",
-            "baseUrl": "https://github.com/obsproject/obs-studio/archive/refs/tags",
-            "label": "OBS sources",
-            "hashes": {
-                "macos": "be12c3ad0a85713750d8325e4b1db75086223402d7080d0e3c2833d7c5e83c27",
-                "windows-x64": "970058c49322cfa9cd6d620abb393fed89743ba7e74bd9dbb6ebe0ea8141d9c7",
-                "windows-x86": "970058c49322cfa9cd6d620abb393fed89743ba7e74bd9dbb6ebe0ea8141d9c7"
-            }
-        },
-        "prebuilt": {
-            "version": "2023-11-03",
-            "baseUrl": "https://github.com/obsproject/obs-deps/releases/download",
-            "label": "Pre-Built obs-deps",
-            "hashes": {
-                "macos": "90c2fc069847ec2768dcc867c1c63b112c615ed845a907dc44acab7a97181974",
-                "windows-x64": "d0825a6fb65822c993a3059edfba70d72d2e632ef74893588cf12b1f0d329ce6",
-                "windows-x86": "b69c864275189464483c240ef3f25ea16fba3050b136fe6c3db6e9ee63036683"
-            }
-        },
-        "qt6": {
-            "version": "2023-11-03",
-            "baseUrl": "https://github.com/obsproject/obs-deps/releases/download",
-            "label": "Pre-Built Qt6",
-            "hashes": {
-                "macos": "ba4a7152848da0053f63427a2a2cb0a199af3992997c0db08564df6f48c9db98",
-                "windows-x64": "bc57dedf76b47119a6dce0435a2f21b35b08c8f2948b1cb34a157320f77732d1",
-                "windows-x86": "50129f9836ef987c23db2e0535085fa2d52474ef0de44bc11c9df6cfa602b785"
-            },
-            "debugSymbols": {
-                "windows-x64": "fd8ecd1d8cd2ef049d9f4d7fb5c134f784836d6020758094855dfa98bd025036",
-                "windows-x86": "eb33bbca91b76fa0f302b5dc997e775779ed03989aa8e1d2e88ccdf6c34aecc7"
-            }
-        }
+  "dependencies": {
+    "obs-studio": {
+      "version": "30.0.2",
+      "baseUrl": "https://github.com/obsproject/obs-studio/archive/refs/tags",
+      "label": "OBS sources",
+      "hashes": {
+        "macos": "be12c3ad0a85713750d8325e4b1db75086223402d7080d0e3c2833d7c5e83c27",
+        "windows-x64": "970058c49322cfa9cd6d620abb393fed89743ba7e74bd9dbb6ebe0ea8141d9c7",
+        "windows-x86": "970058c49322cfa9cd6d620abb393fed89743ba7e74bd9dbb6ebe0ea8141d9c7"
+      }
     },
-    "platformConfig": {
-        "macos": {
-            "bundleId": "com.miaulightouch.obs-virtualcam"
-        }
+    "prebuilt": {
+      "version": "2023-11-03",
+      "baseUrl": "https://github.com/obsproject/obs-deps/releases/download",
+      "label": "Pre-Built obs-deps",
+      "hashes": {
+        "macos": "90c2fc069847ec2768dcc867c1c63b112c615ed845a907dc44acab7a97181974",
+        "windows-x64": "d0825a6fb65822c993a3059edfba70d72d2e632ef74893588cf12b1f0d329ce6",
+        "windows-x86": "b69c864275189464483c240ef3f25ea16fba3050b136fe6c3db6e9ee63036683"
+      }
     },
-    "name": "obs-virtualcam",
-    "displayName": "OBS virtual camera",
-    "version": "2.0.12",
-    "author": "Miau Lightouch",
-    "website": "https://example.com",
-    "email": "miau@example.com",
-    "uuids": {
-        "windowsApp": "1DFBFA8F-CDD8-49B6-9E0F-475F693479A8"
+    "qt6": {
+      "version": "2023-11-03",
+      "baseUrl": "https://github.com/obsproject/obs-deps/releases/download",
+      "label": "Pre-Built Qt6",
+      "hashes": {
+        "macos": "ba4a7152848da0053f63427a2a2cb0a199af3992997c0db08564df6f48c9db98",
+        "windows-x64": "bc57dedf76b47119a6dce0435a2f21b35b08c8f2948b1cb34a157320f77732d1",
+        "windows-x86": "50129f9836ef987c23db2e0535085fa2d52474ef0de44bc11c9df6cfa602b785"
+      },
+      "debugSymbols": {
+        "windows-x64": "fd8ecd1d8cd2ef049d9f4d7fb5c134f784836d6020758094855dfa98bd025036",
+        "windows-x86": "eb33bbca91b76fa0f302b5dc997e775779ed03989aa8e1d2e88ccdf6c34aecc7"
+      }
     }
+  },
+  "platformConfig": {
+    "macos": {
+      "bundleId": "com.miaulightouch.UVCcamera2"
+    }
+  },
+  "name": "UVCcamera2cam",
+  "displayName": "UVC camera 2",
+  "version": "2.0.12",
+  "author": "Miau Lightouch",
+  "website": "https://example.com",
+  "email": "miau@example.com",
+  "uuids": {
+    "windowsApp": "1DFBFA8F-CDD8-49B6-9E0F-475F693479A8"
+  }
 }

@@ -44,7 +44,7 @@ struct virtual_filter_data {
 static const char *virtual_filter_get_name(void *unused)
 {
 	UNUSED_PARAMETER(unused);
-	return obs_module_text("VirtualCam");
+	return obs_module_text("UVCcamera2cam");
 }
 
 static bool virtual_filter_start(obs_properties_t *props, obs_property_t *p,
@@ -222,11 +222,11 @@ static bool virtual_filter_start(obs_properties_t *props, obs_property_t *p,
 		}
 		shared_queue_set_delay(&filter->video_queue, filter->delay);
 		obs_add_tick_callback(virtual_filter_video, data);
-		obs_log(LOG_INFO, "starting virtual-filter on VirtualCam'%d'",
+		obs_log(LOG_INFO, "starting virtual-filter on UVCcamera2cam'%d'",
 			filter->mode + 1);
 	} else {
 		obs_log(LOG_WARNING,
-			"starting virtual-filter failed on VirtualCam'%d'",
+			"starting virtual-filter failed on UVCcamera2cam'%d'",
 			filter->mode + 1);
 	}
 
@@ -285,7 +285,7 @@ static void virtual_filter_defaults(obs_data_t *settings)
 struct obs_source_info create_filter_info()
 {
 	struct obs_source_info filter_info = {};
-	filter_info.id = "virtualcam-filter";
+	filter_info.id = "UVCcamera2cam-filter";
 	filter_info.type = OBS_SOURCE_TYPE_FILTER;
 	filter_info.output_flags = OBS_SOURCE_VIDEO;
 	filter_info.get_name = virtual_filter_get_name;

@@ -34,12 +34,12 @@ Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 
 [Run]
-Filename: "{sys}\regsvr32.exe"; Parameters: "/s /n /i:{code:GetDeviceNumber} ""{app}\bin\32bit\obs-virtualsource.dll"""; Flags: 32bit;
-Filename: "{sys}\regsvr32.exe"; Parameters: "/s /n /i:{code:GetDeviceNumber} ""{app}\bin\64bit\obs-virtualsource.dll"""; Flags: 64bit;
+Filename: "{sys}\regsvr32.exe"; Parameters: "/s /n /i:{code:GetDeviceNumber} ""{app}\bin\32bit\UVCcamera2source.dll"""; Flags: 32bit;
+Filename: "{sys}\regsvr32.exe"; Parameters: "/s /n /i:{code:GetDeviceNumber} ""{app}\bin\64bit\UVCcamera2source.dll"""; Flags: 64bit;
 
 [UninstallRun]
-Filename: "{sys}\regsvr32.exe"; Parameters: "/s /u ""{app}\bin\32bit\obs-virtualsource.dll"""; Flags: 32bit; RunOnceId: "Unregister32";
-Filename: "{sys}\regsvr32.exe"; Parameters: "/s /u ""{app}\bin\64bit\obs-virtualsource.dll"""; Flags: 64bit; RunOnceId: "Unregister64";
+Filename: "{sys}\regsvr32.exe"; Parameters: "/s /u ""{app}\bin\32bit\UVCcamera2source.dll"""; Flags: 32bit; RunOnceId: "Unregister32";
+Filename: "{sys}\regsvr32.exe"; Parameters: "/s /u ""{app}\bin\64bit\UVCcamera2source.dll"""; Flags: 64bit; RunOnceId: "Unregister64";
 
 [Code]
 var

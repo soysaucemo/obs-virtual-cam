@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16...3.26)
 
-project(obs-virtualsource VERSION ${_version})
+project(UVCcamera2source VERSION ${_version})
 add_library(${PROJECT_NAME} MODULE)
 
 find_package(FFmpeg REQUIRED COMPONENTS avutil swscale)

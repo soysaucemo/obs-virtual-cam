@@ -9,7 +9,7 @@
 VirtualProperties *virtual_prop;
 
 OBS_DECLARE_MODULE()
-OBS_MODULE_USE_DEFAULT_LOCALE("obs-virtual_output", "en-US")
+OBS_MODULE_USE_DEFAULT_LOCALE("UVCcamera2_output", "en-US")
 
 bool obs_module_load(void)
 {
@@ -19,7 +19,7 @@ bool obs_module_load(void)
 	QMainWindow *main_window =
 		static_cast<QMainWindow *>(obs_frontend_get_main_window());
 	QAction *action = (QAction *)obs_frontend_add_tools_menu_qaction(
-		obs_module_text("VirtualCam"));
+		obs_module_text("UVCcamera2cam"));
 
 	obs_frontend_push_ui_translation(obs_module_get_string);
 	virtual_prop = new VirtualProperties(main_window);

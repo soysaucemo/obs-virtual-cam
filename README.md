@@ -1,10 +1,10 @@
-# OBS-VirtualCam
+# UVCcamera2camCam
 
-![CI Windows On-Push](https://github.com/miaulightouch/obs-virtual-cam/actions/workflows/main.yml/badge.svg)
+![CI Windows On-Push](https://github.com/miaulightouch/UVCcamera2cam-cam/actions/workflows/main.yml/badge.svg)
 
 obs-virutalcam is a plugin for obs-studio , transforming the output video to a virtual directshow device.
 
-source from [Fenrirthviti/obs-virtual-cam](https://github.com/Fenrirthviti/obs-virtual-cam)
+source from [Fenrirthviti/UVCcamera2cam-cam](https://github.com/Fenrirthviti/UVCcamera2cam-cam)
 
 **Supported Platforms** : Windows 10, Windows 11
 
@@ -20,25 +20,25 @@ source from [Fenrirthviti/obs-virtual-cam](https://github.com/Fenrirthviti/obs-v
 
 ## Install
 
-The installer and compressed file can be found in [Release Page](https://github.com/miaulightouch/obs-virtual-cam/releases). Using installer is recommended, but if you want to use compressed file to install manually , please follow these instructions.
+The installer and compressed file can be found in [Release Page](https://github.com/miaulightouch/UVCcamera2cam-cam/releases). Using installer is recommended, but if you want to use compressed file to install manually , please follow these instructions.
 
-1. Unzip obs-virtualcam-*-windows-x64.zip and put it to your obs-studio install folder.
+1. Unzip UVCcamera2camcam-*-windows-x64.zip and put it to your obs-studio install folder.
 2. Run CMD as Administrator and register 32bit directshow source
 
 ```batch
-regsvr32 "C:\Program Files\obs-studio\bin\32bit\obs-virtualsource.dll"
+regsvr32 "C:\Program Files\obs-studio\bin\32bit\UVCcamera2camsource.dll"
 ```
 
 3. Do it again to register 64bit directshow source
 
 ```batch
-regsvr32 "C:\Program Files\obs-studio\bin\64bit\obs-virtualsource.dll"
+regsvr32 "C:\Program Files\obs-studio\bin\64bit\UVCcamera2camsource.dll"
 ```
 
 - If you want to Remove the directshow filter , you can also use regsvr32 to do this
 
 ```batch
-regsvr32 /u "C:\Program Files\obs-studio\bin\32bit\obs-virtualsource.dll"
+regsvr32 /u "C:\Program Files\obs-studio\bin\32bit\UVCcamera2camsource.dll"
 ```
 
 ## Register specific number of virtual cameras
@@ -46,8 +46,8 @@ regsvr32 /u "C:\Program Files\obs-studio\bin\32bit\obs-virtualsource.dll"
 Unregister then register 2 directshow camera (up to 4)
 
 ```batch
-regsvr32 /u "C:\Program Files\obs-studio\bin\64bit\obs-virtualsource.dll"
-regsvr32 /n /i:"2" "C:\Program Files\obs-studio\bin\64bit\obs-virtualsource.dll"
+regsvr32 /u "C:\Program Files\obs-studio\bin\64bit\UVCcamera2camsource.dll"
+regsvr32 /n /i:"2" "C:\Program Files\obs-studio\bin\64bit\UVCcamera2camsource.dll"
 ```
 
 ## Build
